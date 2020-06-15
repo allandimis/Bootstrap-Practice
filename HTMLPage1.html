@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pagina de Pagamento</title>
+    <link href="bootstrap.css" rel=" stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!--indentificação da pagina e acesso ao css Bootstrap-->
+<body>
+    <header class="jumbotron">
+        <h1 class="display-4"> Ótima Escolha!</h1>
+        <p class="lead"> Obrigado por comprar na Loja xxx! Preencha seus dados para efetivar a compra</p>
+    </header>
+    <div class="card">
+        <form class="row">
+            <section class="col-sm">
+                <h3> Sua Compra</h3>
+            </section>
+            <section class="col-sm">
+                <h3>Dados Pessoais</h3>
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" />
+                </div>
+                <div class="form-group">
+                    <label for="cpf">CPF</label>
+                    <input type="number" class="form-control" id="CPF" />
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Quero receber Newsletter da loja xxx</label>
+                </div>
+            </section>
+            <section class="col-sm">
+                <h3>Cartão de Crédito</h3>
+                <div class="form-group">
+                    <label for="cartao">Numero do Cartão de Crédito</label>
+                    <input type="number" class="form-control" id="cartao" />
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="number" class="form-control" id="cvv" />
+                </div>
+                <div class="form-group">
+                    <label for="bandeira">Bandeira</label>
+                    <select class="form-control" name="Bandeira" id="bandeira">
+                        <option value="visa">VISA</option>
+                        <option value="mastercard">MasterCard</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="validade">Validade</label>
+                    <input type="month" class="form-control" id="mesano" />
+                </div>
+                <button type="submit" class="btn btn-primary">Confirmar pedido</button>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
