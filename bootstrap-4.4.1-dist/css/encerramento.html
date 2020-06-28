@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap testes</title>
+    <link href="bootstrap.css" rel="stylesheet" /> <!-- para linkar com o css-->
+
+</head>
+
+<body>
+    <div>
+        <div class="jumbotron">
+            <h1 class="display-4">
+                Ótima escolha!
+            </h1>
+            <p class="lead">Obrigado por comprar na loja XYZ</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card-mb-3">
+                    <h2 class="card-header">
+                        Sua compra
+                    </h2><!-- fim .card-header -->
+
+                    <div class="card-body">
+                        <dl>
+                            <dt>Produto</dt>
+                            <dd>Camiseta Ecko Caveira</dd>
+
+                            <dt>Cor</dt>
+                            <dd>Preta</dd>
+
+                            <dt>Tamanho</dt>
+                            <dd>G</dd>
+
+                            <dt>Preço</dt>
+                            <dd>48.90</dd>
+                        </dl>
+                    </div>
+                    <!-- fim .card-body -->
+
+                </div><!-- fim .card .mb-3 -->
+            </div><!-- fim .col-md-4 -->
+
+            <form class="col-md-8">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" placeholder="email@exemplo.com" class="form-control"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input type="number" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" class="form-control">
+                    </div>
+
+                    <div class="form-group custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="newsletter" value="sim" checked>
+                        <label class="custom-control-label" for="newsletter">
+                            Quero receber Newsletter da Mirror Fashion
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Cartão de crédito</legend>
+                    <div class="form-group">
+                        <label for="cartao">Numero - CVV</label>
+                        <input type="number" name="cartao" id="cartao" class="form-control">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your card information with
+                            anyone else.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bandeira">Bandeira</label>
+                        <select name="bandeira" id="bandeira" aria-placeholder="Selecione uma opção"
+                            class="custom-select">
+                            
+                            <option disabled selected>Selecione uma opção...</option>
+                            <option value="master">Mastercard</option>
+                            <option value="visa">Visa</option>
+                            <option value="amex">American Express</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="validade">Validade</label>
+                        <input type="month" name="validade" id="validade">
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary mb-3">Confirmar pedido</button>
+                    <span class="oi oi-thumb-up"></span>
+                </fieldset>
+            </form>
+        </div>
+        <!--fim do row-->
+    </div>
+    <!--fim do container-->
+</body>
+
+</html>
